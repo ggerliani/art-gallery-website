@@ -5,14 +5,32 @@ body {
 main  {
     padding: 16px;
 }
-
+a{
+    text-decoration: none;
+    max-width: 100%;
+}
 .mobile-img{
     width: 100%;
     max-width: 500px;
     height: 240px;
 }
 
+.come-and-be-inspired-desktop {
+    display: none;
+}
 .tablet-img{
+    display: none;
+}
+.desktop-img{
+    display: none;
+}
+.desktop-grid-2-img{
+    display: none;
+}
+.desktop-grid-3-img {
+    display: none;
+}
+.your-day-at-the-gallery-first-img-desktop {
     display: none;
 }
 
@@ -211,19 +229,45 @@ button .buttonp{
      header{
         position: relative
      }
+
+     /* .first-gallery-cont{
+        display: block !important;
+     } */
+
+     .center-gallery{
+        display: block
+     }
      
 
      main {
         padding: 0px 40px 0px 39px;
      }
     
+     
     .mobile-img {
         display: none;
     }
+    .desktop-img{
+        display: none;
+    }
+    .your-day-at-the-gallery-first-img-desktop{
+        display: none;
+    }
+    .desktop-grid-2-img{
+        display: none;
+    }
+    .desktop-grid-3-img {
+        display: none;
+    }
+
     .mobile-second-img {
         display: none;
     }
     .group-of-images-mobile{
+        display: none;
+    }
+
+    .come-and-be-inspired-desktop{
         display: none;
     }
 
@@ -257,6 +301,7 @@ button .buttonp{
         width: 223px;
     }
     .your-day-at-the-gallery {
+    
         position: relative;
         margin-top: 154px;
     }
@@ -275,7 +320,9 @@ button .buttonp{
 .main-cont{
     display: flex;
     justify-content: center;
-    margin-top: -58px;
+    margin-top:-35px;
+
+    
 }
 
 .gallery-image-group-tablet{
@@ -311,9 +358,18 @@ button .buttonp{
 
 .come-and-be-inspired-tablet h1{
     color: white;
+    font-family: 'Big Shoulders Display';
+    font-size: 50px;
+    font-weight: 900;
+    width: 223px;
 }
 
 .come-and-be-inspired-tablet p{
+    font-family: 'Outfit';
+    font-size: 18px;
+    line-height: 28px;
+    width: 223px;
+    
     margin-top: 24px;
     color: white;
 
@@ -343,3 +399,202 @@ button .buttonp{
     margin-right: 90px
 }
 }
+
+
+
+
+/* desktop responsive */
+@media screen and (min-width: 1250px){
+    .tablet-img {
+        display: none;
+    }
+    .your-day-at-the-gallery-first-img-tablet {
+        display: none;
+    
+
+
+    }
+    .main-cont img{
+        
+    }
+    .come-and-be-inspired-tablet{
+        display: none;
+    }
+
+
+    .first-gallery-cont{
+        justify-content: center;
+    flex-direction: row;
+    display: flex !important;
+        display: block;
+    }
+    .tablet-grid-2-img{
+        display: none;
+    }
+    .tablet-grid-3-img{
+        display: none;
+    }
+    .desktop-img{
+        display: block;
+        width: 540px;
+    }
+
+    .desktop-img-black-part{
+        display: flex;
+    }
+
+    .header-black-part {
+        height: 799px;
+        width: 450px;
+        background-color: #151515;
+    }
+
+    main {
+        padding: 0px 165px;
+    }
+
+.modern-art-gallery{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 925px;
+    margin-top: 200px;
+    gap: 55px;
+}
+
+
+
+
+    .modern-art-gallery h1{
+        position: absolute;
+        background: linear-gradient(91deg, rgb(255 255 255) 56.2%, rgb(0 0 0) 40%);
+        -webkit-text-fill-color: #ffffff00;
+        -webkit-background-clip: text;
+        margin-left: -767px;
+        margin-top: -18px;
+        font-size: 96px;
+        width: 514px;
+    }
+
+    .modern-art-gallery .gallery-p{
+        font-size: 22px;
+        line-height: 32px;
+        width: 350px;
+    }
+
+
+    .your-day-at-the-gallery{
+        
+        display: flex;
+        flex-direction: row;
+
+    }
+    .your-day-at-the-gallery h1{
+        margin-left: -558px;
+        margin-top: 70px;
+        font-size: 60px;
+        width: 350px;
+    }
+    .your-day-at-the-gallery p{
+        margin-left: -362px;
+        margin-top: 220px;
+        font-size: 22px;
+        line-height: 32px;
+        width: 350px;
+    }
+    
+    .your-day-at-the-gallery-first-img-desktop{
+        display: block;
+    width: 635px;
+        margin-left: -78px;
+    position: absolute;
+    }
+
+    .desktop-grid-2-img{
+        display: block;
+        width: 635px;
+        
+      margin-left: -265px;
+
+    }
+
+    .desktop-grid-3-img {
+        display: block;
+        width: 445px;
+        margin-top: -721px;
+        margin-left: 400px;
+    }
+    
+
+
+    .gallery-image-group-tablet {
+        margin-top: 141px;
+        display: block;
+        max-width: 100%;
+        margin-left: 275px;
+    }
+
+
+
+    .come-and-be-inspired-desktop{
+        display: block;
+        padding: 65px 47px;
+        background: #151515;
+        margin-left: 400px;
+        margin-top: 30px;
+        max-width: 445px;
+    }
+
+    .come-and-be-inspired-desktop h1{
+        font-family: 'Big Shoulders Display';
+        line-height: 60px;
+        font-size: 60px;
+        width: 350px;
+        color: White;
+        font-weight: 900;
+
+    }
+
+    .come-and-be-inspired-desktop p{
+        font-family: 'Outfit';
+        color: white;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 34.5px;
+        width: 350px;
+        margin-top: 23.5px;
+
+    }
+
+    .footer-box{
+        padding: 0;
+        margin-top: 180px;
+        padding: 80px 165px;
+    }
+    .footer-box h1{
+        font-size: 35px;
+    width: 150px;
+    max-width: 150px;
+
+    }
+
+    .footer-box p {
+        margin-right: 120px;
+        width: 430px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+    .center-gallery{
+        display: flex;
+        justify-content: center;
+    }
+
+
+ 
+}
+
+
+
+
