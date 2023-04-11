@@ -8,6 +8,12 @@
     max-width: 500px;
 
 }
+.left-arrow-black-part:hover{
+    cursor: pointer;
+}
+.desktop-location-img{
+    display: none;
+}
 .tablet-location-img{
     display: none;
 }
@@ -19,6 +25,15 @@ button{
     background: none;
     border: none;
 
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+
+.left-arrow{
+    cursor: pointer;
 }
 .location-header{
     display: flex;
@@ -137,6 +152,10 @@ footer p{
         display: none;
     }
 
+    .desktop-location-img{
+        display: none;
+    }
+
     .image-container{
         width: 100%;
         display: flex;
@@ -184,13 +203,158 @@ footer p{
 
     .soc-icons{
         margin-right: 95px;
-    width: 20px;
-    height: 20px;
+   
 
 }
 }
+/* /* end of the tablet responsive * */
 
-/* end of the tablet responsive */
+
+@media screen and (min-width: 1250px){
+
+
+
+    .tablet-location-img{
+        display: none;
+    }
+    
+
+    .desktop-location-img {
+        display: block;
+        width: 100%
+    }
+
+    .image-container{
+        width: 100%;
+    }
+
+    .info-container{
+
+        padding: 104px 165px 128px 165px;
+    }
+
+    .king-street-h2 {
+        font-size: 36px;
+    }
+    
+    .our-location-h1{
+        font-size: 70px;
+    }
+
+    .exact-direction {
+        margin-left: 500px;
+        margin-top: -180px;
+    }
+    
+    .exact-direction p{
+        font-size: 22px;
+        width: 540px;
+    }
+
+    footer{
+        padding: 80px 165px;
+
+    }
+
+    footer p{
+        width: 430px;
+        font-size: 18px;
+    }
+
+    footer h1{
+        font-size: 30px;
+    }
+  
+
+    .fb-icon:hover{
+        cursor: pointer;
+    }
+    .insta-icon:hover{
+        cursor: pointer;
+    }
+    .twitter-icon:hover{
+        cursor: pointer;
+    }
+
+    .soc-icons:hover{
+        cursor: pointer;
+    }
+
+    .soc-icons svg:hover path{
+        fill:#151515;
+        transition-duration: .5s;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+    .back-to-home:hover .left-arrow {
+        background-color: #151515;
+
+    }
+
+    .back-to-home:hover .left-arrow-black-part{
+        background-color: #151515;
+    }
+
+    .left-arrow:hover{
+        background-color: #D5966C  !important;
+    }
+    
+    .left-arrow-black-part:hover{
+        background-color: #D5966C !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2,12 +2,26 @@ body {
     width: 100vw
 }
 
+
+
 main  {
     padding: 16px;
 }
-a{
+
+
+.location-button a{
     text-decoration: none;
     max-width: 100%;
+    color: white;
+    font-family: 'Big Shoulders Display';
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.location-button{
+    background-color:#151515;
+    max-width: max-content;
+    
 }
 .mobile-img{
     width: 100%;
@@ -15,6 +29,15 @@ a{
     height: 240px;
 }
 
+.left-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #151515;
+    width: 204px;
+    min-height: 72px;
+    
+}
 .come-and-be-inspired-desktop {
     display: none;
 }
@@ -66,8 +89,11 @@ a{
 
 .location-button{
     display: flex;
+
     
 }
+
+
 .location-button:hover{
     cursor: pointer;
 }
@@ -75,9 +101,6 @@ a{
 
 
 
-.location-button a{
-    display: flex;
-}
 
 button{
     background: #151515;
@@ -98,7 +121,7 @@ button .buttonp{
     align-items: center;
     width: 56px;
     height:72px;
-    background: #D5966C;
+    background-color:  #D5966C;
 
 
 }
@@ -394,10 +417,10 @@ button .buttonp{
 .social-icons {
     display: flex;
     flex-direction: row;
-    width: 20px;
-    height: 20px;
+    
     margin-right: 90px
 }
+
 }
 
 
@@ -414,9 +437,7 @@ button .buttonp{
 
 
     }
-    .main-cont img{
-        
-    }
+    
     .come-and-be-inspired-tablet{
         display: none;
     }
@@ -467,7 +488,7 @@ button .buttonp{
 
     .modern-art-gallery h1{
         position: absolute;
-        background: linear-gradient(91deg, rgb(255 255 255) 56.2%, rgb(0 0 0) 40%);
+        background: linear-gradient(91deg, rgb(255 255 255) 56%, rgb(0 0 0) 40%);
         -webkit-text-fill-color: #ffffff00;
         -webkit-background-clip: text;
         margin-left: -767px;
@@ -592,8 +613,38 @@ button .buttonp{
     }
 
 
- 
+svg:hover{
+    cursor: pointer;
 }
+    .social-icons svg:hover path {
+        
+        fill:#D5966C;
+        transition-duration: .5s;
+        cursor: pointer;
+    }
+
+
+    .location-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .location-button{
+        width: max-content;
+    }
+
+    
+    .left-part:hover {
+        background: #d5966c;
+        cursor: pointer;
+    }
+    .left-part:hover ~ .right-arrow {
+        background-color: #151515;
+      }
+}
+
 
 
 
